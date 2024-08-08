@@ -4,9 +4,9 @@ $user = $_POST['username'];
 $email = $_POST['email'];
 $pass = $_POST['password'];
 
-echo "Username: $user<br>";
-echo "Email: $email<br>";
-echo "Password: $pass<br>";
+// echo "Username: $user<br>";
+// echo "Email: $email<br>";
+// echo "Password: $pass<br>";
 
 // Database connection parameters
 $servername = "localhost";
