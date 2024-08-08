@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            font-family: 'poppins',sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            /* background-color: seagreen; */
+            align-items: center;
+            min-height: 100vh;
+        }
+        /* .login{
+            width: 420px;
+            background-color: green;
+            color: white;
+        } */
+        .login h2{
+            text-align: center;
+            margin-top: 10px;
+        }
+        .login h1{
+            text-align: center;
+            color: green;
+            margin-bottom: 30px;
+        }
+        .login h5,h4{
+            text-align: center;
+        }
+
+        .input{
+            margin-top: 10px;
+            height: 45px;
+            width: 380px;
+            padding-left: 10px;
+            border-radius: 30px;
+            margin-left: 100px;
+            /* border: none; */
+            background-color: gainsboro;
+
+
+        }
+
+        i{
+            position: relative;
+            left: -45px;
+        }
+        #signup{
+            width: 100px;
+            border-radius: 40px;
+            background-color: green;
+            color: white;
+            cursor: pointer;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            height: 30px;
+            margin-left: 100px;
+        }
+        #signup:hover{
+            background-color: grey;
+            color: white;
+        }
+        .Remember{
+            margin-top: 20px;
+            margin-left: 100px;
+        }
+        .register{
+            margin-left: 100px;
+        }
+        .for{
+            margin-left: 20px;
+        }
+
+    </style>
+    <!-- <script src="login.js"></script> -->
+</head>
+<body>
+
+    <div class="login">
+        <h1>Welcome to a New Banking Experience</h1>
+        <h4>Not registered on the new platform?</h4>
+        <h5>Use your credentials to Sign Up</h5>
+        <h2>Sign Up</h2>
+        <form action="reg.php" method="post"  autocomplete="on" >
+            <div class="username">
+                <input  class="input" type="text" placeholder="Username" name="username" required > 
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="password">
+                <input  class="input" type="email" placeholder="Email" name="email" required> 
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="Confirm Password">
+                <input class="input" type="password" placeholder="Password" name="password" required>
+            </div>
+            <!-- <div class="Remember">
+                <label> <input type="checkbox">Remember me</label>
+                <a href="#" class="for">Forgot password?</a>
+            </div> -->
+            <div class="sign" >
+                <input id="signup" type="submit" value="Sign Up" >
+            </div>
+            <div class="register">
+                <p>You have an account?  <a href="form1.html" class="for">Login here</a></p> 
+            </div>
+            <!-- id="username" 
+            id="password"
+            id="confirmation" -->
+
+        </form>
+
+
+    </div>
+    
+
+</body>
+</html>
